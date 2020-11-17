@@ -1,0 +1,16 @@
+.option {
+    padding: 0.2rem 1rem;
+    border: solid 1.5px white;
+    box-sizing: border-box;
+    border-radius: 999px;
+    background-color: black;
+    color: white;
+    outline-style: none;
+    margin: 0.1rem;
+}
+
+.active-option {
+    color: black;
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,44 @@
+.news {
+    height: calc(30vh - 2rem);
+    padding: 1rem 0.5rem;
+    background-color: rebeccapurple;
+    position: relative;
+}
+
+.news-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 3%;
+    scroll-behavior: smooth;
+}
+
+.news-item {
+    width: calc(100vw - 1rem);
+    position: relative;
+}
+
+.news-item img {
+    width: inherit;
+}
+
+.news-item span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    color: yellow;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.news-item .fade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}

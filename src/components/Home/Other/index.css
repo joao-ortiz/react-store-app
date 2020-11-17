@@ -1,0 +1,40 @@
+.other-container {
+    padding: 0.5rem;
+    background-color: rebeccapurple;
+}
+
+.other-item {
+    max-height: 15vh;
+    margin: 0.3rem 0;
+    width: calc(100vw - 1rem);
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-radius: 1%;
+}
+
+.other-item img {
+    width: inherit;
+}
+
+.other-item span {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.other-fade {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

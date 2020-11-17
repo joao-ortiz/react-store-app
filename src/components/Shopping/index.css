@@ -1,0 +1,23 @@
+.products-container {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.section-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.section-title h1 {
+    padding: 2rem 0;
+    margin: 0;
+}
+
+.product-list {
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+}

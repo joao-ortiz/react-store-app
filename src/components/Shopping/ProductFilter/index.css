@@ -1,0 +1,15 @@
+.filter-container {
+    padding: 0.5rem;
+    text-align: center;
+    background-color: black;
+}
+
+.filter-container h2{
+    margin: 0 0 0.5rem 0;
+}
+
+.filter-options {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+}

@@ -1,0 +1,45 @@
+.dropdown {
+    position: relative;
+}
+
+.menu-button {
+    font-size: 1.2rem;
+    width: 5rem;
+    text-align: right;
+    margin-bottom: auto;
+}
+
+.dropdown-items{
+    z-index: 1;
+    margin: 0;
+    width: 100vw;
+    padding-left: 5%;
+    top: 3rem;
+    left: 0;
+    background-color: black;
+    height: 0vh;
+    list-style: none;
+    position: fixed;
+    transition: all 0.2s;
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+    height: 100vh;
+}
+
+.dropdown-item {
+    height: 3rem;
+    margin: 1rem 0;
+}
+
+.item-label {
+    font-size: 2.5rem;
+    border-bottom: white 0.3rem solid;
+}
+
+.active {
+    color: palegreen;
+    border-color: palegreen;
+}
