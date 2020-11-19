@@ -1,8 +1,6 @@
 import './index.css'
-import { useState, useEffect } from 'react'
 import FilterOption from './FilterOption'
-function ProductFilter({onFilter}) {
-    const [filters, setFilters] = useState([])
+function ProductFilter({setFilters, filters}) {
     const options = ['short', 'pants', 'underwear']
     function handleCheck(value, action) {
         console.log(value, action);
@@ -16,16 +14,13 @@ function ProductFilter({onFilter}) {
             )
         }
     }
-    useEffect(() => {
-        onFilter(filters)
-    },[filters])
     return (
         <div className="filter-container">
             <h2>Filter</h2>
             <div className="filter-options">
                 { options.map(option => {
                     return(
-                    <FilterOption option={option} handleCheck={handleCheck}/>
+                    <FilterOption key={option} option={option} handleCheck={handleCheck}/>
                     )
                 }) }
             </div>

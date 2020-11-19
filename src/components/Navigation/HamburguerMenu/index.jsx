@@ -7,7 +7,7 @@ function HamburguerMenu() {
     const [open, setOpen] = useState(false)
     const links = menuLinks.map(link => {
         return (
-            <li className="dropdown-item">
+            <li key={Math.random().toString().substr(2,8)} className="dropdown-item">
                 <NavLink 
                     to={link.path}
                     className="item-label"
@@ -27,6 +27,14 @@ function HamburguerMenu() {
                 {open ? "Close" : "Menu"}
             </div>
             <ul className={open ? 'dropdown-items visible' : 'dropdown-items'}>
+                <NavLink 
+                    exact
+                    to="/"
+                    className="item-label"
+                    onClick={() => setOpen(!open)}
+                >
+                    Home
+                </NavLink>
                 { links }
             </ul>
         </div>

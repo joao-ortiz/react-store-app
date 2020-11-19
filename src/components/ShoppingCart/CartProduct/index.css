@@ -1,0 +1,43 @@
+.cart-product {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    width: 100%;
+    position: relative;
+    height: 12vh;
+    margin-bottom: 0.5rem;
+}
+
+.cart-product button {
+    background-color: rebeccapurple;
+    border: 0;
+    border-bottom: solid 2px white;
+    color: white;
+    position: absolute;
+    padding: 0.1rem 0;
+    bottom: 0.5rem;
+    left: calc(12vh + 0.5rem);
+}
+
+.cart-product .info {
+    width: 100%;
+    display: flex;
+}
+
+.cart-product .info img {
+    height: 12vh;
+}
+
+.cart-product .info .label {
+    padding-left: 0.5rem;
+}
+
+.cart-product .quantity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-emphasis: right;
+}
+.cart-product .sub-total {
+    text-align: center;
+}
+

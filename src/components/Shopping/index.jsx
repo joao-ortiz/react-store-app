@@ -9,9 +9,6 @@ function Shopping(props) {
     let productList = products.filter(product => {
         return product.section === props.match.params.section
     })
-    function onFilter(filterList) {
-        setFilters(filterList)
-    }
     function renderProducts() {
         if (filters.length) {
             const filterSet = {}
@@ -29,11 +26,11 @@ function Shopping(props) {
             <div className="section-title">
                 <h1>{props.match.params.section ? props.match.params.section + ' apparel' : 'Shop All'}</h1>
             </div>
-            <ProductFilter onFilter={onFilter}/>
+            <ProductFilter filters={filters} setFilters={setFilters}/>
             <div className="product-list">
                 { renderProducts().map(product => {
             return (
-                <Product product={product} />
+                <Product key={product.id} product={product} />
             )
         }) }
             </div>

@@ -15,6 +15,9 @@ function Menu() {
 
     return (
         <ul className="menu">
+            <NavLink exact to="/">
+                Home
+            </NavLink>
             { links }
         </ul>
     )
